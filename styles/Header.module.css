@@ -1,0 +1,47 @@
+.HeaderWrapper {
+  align-items: center;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes titleAnimation {
+  0% {
+    color: darkslateblue;
+  }
+  25% {
+    color: darkslateblue;
+  }
+  50% {
+    color: olivedrab;
+  }
+  75% {
+    color: tomato;
+  }
+  100% {
+    color: darkslateblue;
+  }
+}
+
+.TitleWrapper {
+  animation: titleAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.NavWrapper ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.NavWrapper a {
+  color: black;
+  text-decoration: none;
+}
+
+.NavWrapper a:hover {
+  color: tomato;
+  cursor: pointer;
+  transition: 0.2s;
+}
